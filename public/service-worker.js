@@ -1,15 +1,11 @@
 const APP_PREFIX = 'UP-';
 const VERSION = 'version_01';
 const CACHE_NAME = APP_PREFIX + VERSION;
-
 const FILES_T0_CACHE = [
     "./index.html",
-    "./public/css/styles.css",
-    "./routes/api.js",
-    "./public/js/idb.js",
-    "./public/js/index.js",
-    "./models/transaction.js"
-]
+    "./css/styles.css",
+    "./js/index.js",
+];
 
 self.addEventListener('install', function (e) {
     e.waitUntil(
@@ -27,26 +23,21 @@ self.addEventListener('activate', function (e) {
         caches.keys().then(function (keyList) {
             let cacheKeeplist = keyList.filter(function (key) {
                 return key.indexOf(APP_PREFIX);
-            });
+            })
             cacheKeeplist.push(CACHE_NAME);
 
-            return Promise.all(
-                keyList.map(function (key, i) {
+            return Promise.all(keyList.map(function (key, i) {
                 if(cacheKeeplist.indexOf(key) === -1) {
                     console.log('deleting cache : ' + keyList[i]);
-
                     return caches.delete(keyList[i]);
                 }
-            })
-            );
+            }));
         })
     );
 });
 
 self.addEventListener('fetch', function (e) {
-
     console.log('fetch request : ' + e.request.url)
-
     e.respondWith(
         caches.match(e.request).then(function (request) {
             if(request) {
