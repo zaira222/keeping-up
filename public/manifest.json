@@ -1,0 +1,53 @@
+{
+    "icons": [
+        {
+            "src": "public/icons/icon-72x72.png",
+            "sizes": "72 x72",
+            "type": "image/png"
+        },
+        {
+            "src": "public/icons/icon-96x96.png",
+            "sizes": "96 x 96",
+            "type": "image/png"
+        },
+        {
+            "src": "public/icons/icon-128x128.png",
+            "sizes": "128 x 128",
+            "type": "image/png"
+        },
+        {
+            "src": "public/icons/icon-144x144.png",
+            "sizes": "144 x 144",
+            "type": "image/png"
+        },
+        {
+            "src": "public/icons/icon-152x152.png",
+            "sizes": "152 x 152",
+            "type": "image/png"
+        },
+        {
+            "src": "public/icons/icon-192x192.png",
+            "sizes": "192 x 192",
+            "type": "image/png"
+        },
+        {
+            "src": "public/icons/icon-384x384.png",
+            "sizes": "72 x72",
+            "type": "image/png"
+        },
+        {
+            "src": "public/icons/icon-512x512.png",
+            "sizes": "512 x 512",
+            "type": "image/png"
+        }
+    ],
+
+
+"name": "Keeping Up",
+"short_name": "Up",
+"display": "standalone",
+"start_url": "../index.html",
+"description": "An app where you keep up with your earning online and offline.",
+"background_color": "#01579b",
+"theme_color": "#ffffff"
+}
