@@ -30,6 +30,8 @@ function saveRecord(record) {
 }
 
 function uploadTransaction() {
+    alert("online")
+    console.log("uploadTransaction()")
     const transaction = db.transaction(['new_transaction'], 'readwrite');
 
     const transactionObjectStore = transaction.objectStore('new_transaction');
@@ -66,4 +68,3 @@ function uploadTransaction() {
 };
 }
 
-window.add('online', uploadTransaction);
