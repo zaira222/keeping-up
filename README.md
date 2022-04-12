@@ -4,7 +4,7 @@
 This budget tracker can be used either on computer or it can downloaded like an app and it was designed for an everyday user to use it on the go. 
 The benefit of using the budget tracker is that even when its offline it will let the user input the information. Then once they have access to 
 the internet it will upload that information to the most current state. If the user is on the internet browser it will alert them once it has an internet connection
-and it will also alert them that their information has been saved.
+and it will also alert them that their information has been saved. Overrall it will help users be more informed of their own spending habits.
 
 ## Built With
 * express
